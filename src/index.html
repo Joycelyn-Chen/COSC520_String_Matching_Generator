@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Matching Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <p>String Matching Generator</p>
+    </div>
+    <div class="container">
+        <div class="text">
+            <label for="text">Text</label>
+            <textarea name="text" id="t" cols="30" rows="7" placeholder="Enter a text here"></textarea>
+        </div>
+        <div class="pattern">
+            <label for="pattern">Pattern</label>
+            <textarea name="pattern" id="p" cols="30" rows="7" placeholder="Enter a pattern here"></textarea>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="KMP_btn">KMP</button>
+        <button id="Rabin_btn">Rabin Karp</button>
+        <button id="Boyer_btn">Boyer Moore</button>
+        <button id="All_btn">Do EVERYTHING!!</button>
+        <button id="Performance_btn">Performance graph</button>
+    </div>
+    <div class="output" id="o"></div>
+    <div class="output" id="o_Rabin"></div>
+    <div class="output" id="o_Boyer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+    <div>
+        <canvas id="speedChart" width="600" height="400"></canvas>
+    </div>
+</body>
+</html>

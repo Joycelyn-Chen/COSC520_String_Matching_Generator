@@ -1,0 +1,37 @@
+{
+    "name": "string-matching-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test-kmp": "jshint ./src/kmp-matcher.js ./test/test-kmp.js && node ./test/test-kmp.js | faucet",
+        "test-rabin": "node ./test/test-rabin.js",
+        "test-boyer": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "Name <@gmail.com>",
+    "keywords": [
+        "KMP",
+        "rabin-karp",
+        "Boyer Moore"
+    ],
+    "license": "MPL-2.0",
+    "dependencies": {
+        "chart.js": "^4.0.1",
+        "jest-cli": "^29.3.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.31.0",
+        "faucet": "0.0.1",
+        "jasmine": "^3.8.0",
+        "jest": "^27.0.6",
+        "jshint": "~2.5.6",
+        "tape": "~3.0.0",
+        "ts-jest": "^27.0.4",
+        "chart.js":"^4.0.1"
+    },
+    "type": "module"
+}
